@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <link href="img/favicon.png" rel="shortcut icon">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link href="css/main.css?v=7857" rel="stylesheet" type="text/css">
-    <script src="js/main.js?v=7857" type="text/javascript"></script>
+    <link href="css/main.css?v=70560" rel="stylesheet" type="text/css">
+    <script src="js/main.js?v=70560" type="text/javascript"></script>
     <!-- Meta tags facebook-->
     <meta property="og:title" content="#">
     <meta property="og:description" content="#">
@@ -40,10 +40,10 @@
                 <div class="header__menu">
                   <nav>
                     <ul>
-                      <li><a href="services.html">Inicio</a></li>
-                      <li><a href="industries.html">Ventajas</a></li>
-                      <li><a href="technologies.html">Servicios</a></li>
-                      <li><a href="#">Testimonios</a></li>
+                      <li><a href="index.html">Inicio</a></li>
+                      <li><a data-goto=".section--features">Ventajas</a></li>
+                      <li><a data-goto=".section--services">Servicios</a></li>
+                      <li><a data-goto=".section--testimonies">Testimonios</a></li>
                     </ul>
                   </nav>
                 </div>
@@ -77,10 +77,10 @@
                 <div class="header__nav__nav__body">
                   <div class="header__nav__nav__menu"> 
                     <ul>
-                      <li><a href="services.html">Inicio</a></li>
-                      <li><a href="industries.html">Ventajas</a></li>
-                      <li><a href="technologies.html">Servicios</a></li>
-                      <li><a href="#">Testimonios</a></li>
+                      <li><a href="index.html">Inicio</a></li>
+                      <li><a data-goto=".section--features">Ventajas</a></li>
+                      <li><a data-goto=".section--services">Servicios</a></li>
+                      <li><a data-goto=".section--testimonies">Testimonios</a></li>
                     </ul>
                   </div>
                 </div>
@@ -234,39 +234,20 @@
               <div class="cols"> 
                 <div class="col-md-3">
                   <article class="article--plan"> 
-                    <div class="article__header"> 
-                      <h4 class="article__title">Plan Free</h4>
-                      <p>Ideal para nuevos usuarios. Permite hasta 5 eventos y 1 usuario administrador.</p>
-                    </div>
-                    <div class="article__body"> 
-                      <ul> 
-                        <li>Sitio web / calendario de eventos.</li>
-                        <li>Registro en línea / pasarela de pagos.</li>
-                        <li>Check-in / ticketera.</li>
-                        <li>Gestión de reservas.</li>
-                        <li>Reportería.</li>
-                      </ul>
-                    </div>
-                    <div class="article__footer"> 
-                      <div class="article__pricing">$14.990<span>Por usuario / mensual</span></div>
-                      <div class="article__button"> <a href="#" class="btn">Contratar</a></div>
-                    </div>
-                  </article>
-                </div>
-                <div class="col-md-3">
-                  <article class="article--plan"> 
-                    <div class="article__header"> 
-                      <h4 class="article__title">Plan 1</h4>
-                      <p>Para usuarios que buscan más. Eventos ilimitados y hasta 3 usuarios administradores.</p>
-                    </div>
-                    <div class="article__body"> 
-                      <ul> 
-                        <li>Sitio web / calendario de eventos.</li>
-                        <li>Registro en línea / pasarela de pagos.</li>
-                        <li>Check-in / ticketera.</li>
-                        <li>Gestión de reservas.</li>
-                        <li>Reportería.</li>
-                      </ul>
+                    <div class="article__header">
+                      <div class="article__header__header"> 
+                        <h4 class="article__title">Plan Free</h4>
+                        <p>Ideal para nuevos usuarios. Permite hasta 5 eventos y 1 usuario administrador.</p>
+                      </div>
+                      <div class="article__header__body">
+                        <ul> 
+                          <li>Sitio web / calendario de eventos.</li>
+                          <li>Registro en línea / pasarela de pagos.</li>
+                          <li>Check-in / ticketera.</li>
+                          <li>Gestión de reservas.</li>
+                          <li>Reportería.</li>
+                        </ul>
+                      </div>
                     </div>
                     <div class="article__footer"> 
                       <div class="article__pricing">$14.990<span>Por usuario / mensual</span></div>
@@ -276,19 +257,20 @@
                 </div>
                 <div class="col-md-3">
                   <article class="article--plan"> 
-                    <div class="article__header"> 
-                      <h4 class="article__title">Plan 2</h4>
-                      <p>Para organizaciones en crecimiento. Eventos y usuarios administradores ilimitados.</p>
-                    </div>
-                    <div class="article__body"> 
-                      <ul> 
-                        <li>Sitio web / calendario de eventos.</li>
-                        <li>Registro en línea / pasarela de pagos.</li>
-                        <li>Check-in / ticketera.</li>
-                        <li>Gestión de reservas.</li>
-                        <li>Reportería.</li>
-                        <li>Integraciones adicionales: WhatsApp, email, encuestas, y marketing.</li>
-                      </ul>
+                    <div class="article__header">
+                      <div class="article__header__header"> 
+                        <h4 class="article__title">Plan 1</h4>
+                        <p>Para usuarios que buscan más. Eventos ilimitados y hasta 3 usuarios administradores.</p>
+                      </div>
+                      <div class="article__header__body">
+                        <ul> 
+                          <li>Sitio web / calendario de eventos.</li>
+                          <li>Registro en línea / pasarela de pagos.</li>
+                          <li>Check-in / ticketera.</li>
+                          <li>Gestión de reservas.</li>
+                          <li>Reportería.</li>
+                        </ul>
+                      </div>
                     </div>
                     <div class="article__footer"> 
                       <div class="article__pricing">$14.990<span>Por usuario / mensual</span></div>
@@ -298,20 +280,46 @@
                 </div>
                 <div class="col-md-3">
                   <article class="article--plan"> 
-                    <div class="article__header"> 
-                      <h4 class="article__title">Plan Corporativo</h4>
-                      <p>Contacta con nosotros para un plan a medida.</p>
+                    <div class="article__header">
+                      <div class="article__header__header"> 
+                        <h4 class="article__title">Plan 2</h4>
+                        <p>Para organizaciones en crecimiento. Eventos y usuarios administradores ilimitados.</p>
+                      </div>
+                      <div class="article__header__body">
+                        <ul> 
+                          <li>Sitio web / calendario de eventos.</li>
+                          <li>Registro en línea / pasarela de pagos.</li>
+                          <li>Check-in / ticketera.</li>
+                          <li>Gestión de reservas.</li>
+                          <li>Reportería.</li>
+                          <li>Integraciones adicionales: WhatsApp, email, encuestas, y marketing.</li>
+                        </ul>
+                      </div>
                     </div>
-                    <div class="article__body"> 
-                      <ul> 
-                        <li>Sitio web / calendario de eventos.</li>
-                        <li>Registro en línea / pasarela de pagos.</li>
-                        <li>Check-in / ticketera.</li>
-                        <li>Gestión de reservas.</li>
-                        <li>Reportería.</li>
-                        <li>Integraciones adicionales: WhatsApp, email, encuestas, y marketing.</li>
-                        <li>Potenciales integraciones incluyen módulo de ventas, contabilidad, CRM, y más.</li>
-                      </ul>
+                    <div class="article__footer"> 
+                      <div class="article__pricing">$14.990<span>Por usuario / mensual</span></div>
+                      <div class="article__button"> <a href="#" class="btn">Contratar</a></div>
+                    </div>
+                  </article>
+                </div>
+                <div class="col-md-3">
+                  <article class="article--plan"> 
+                    <div class="article__header">
+                      <div class="article__header__header">
+                        <h4 class="article__title">Plan Corporativo</h4>
+                        <p>Contacta con nosotros para un plan a medida.</p>
+                      </div>
+                      <div class="article__header__body">
+                        <ul> 
+                          <li>Sitio web / calendario de eventos.</li>
+                          <li>Registro en línea / pasarela de pagos.</li>
+                          <li>Check-in / ticketera.</li>
+                          <li>Gestión de reservas.</li>
+                          <li>Reportería.</li>
+                          <li>Integraciones adicionales: WhatsApp, email, encuestas, y marketing.</li>
+                          <li>Potenciales integraciones incluyen módulo de ventas, contabilidad, CRM, y más.</li>
+                        </ul>
+                      </div>
                     </div>
                     <div class="article__footer"> 
                       <!--.article__pricing $14.990
@@ -344,7 +352,7 @@
                     </div>
                   </div>
                   <div class="article__testimony">
-                    <blockquote>Nisi eros et quam magna eros non vel ut mollis. Nulla aliquam pulvinar nisl aliquam vestibulum ut magna pretium faucibus dapibus nibh placerat varius ullamcorper.
+                    <blockquote>Habitant dui pharetra mattis commodo hendrerit velit egestas tellus etiam. Cubilia feugiat nisl integer justo porttitor nam blandit venenatis quisque quis nec ullamcorper viverra habitasse.
                     </blockquote>
                     <div class="article__stars">
                       <div class="article__star"><span class="fa fa-star"></span></div>
@@ -366,7 +374,7 @@
                     </div>
                   </div>
                   <div class="article__testimony">
-                    <blockquote>Consequat pharetra consequat id taciti curabitur donec posuere ad tristique. Aliquam feugiat enim maecenas nisl fermentum tempus semper curabitur curabitur libero dapibus conubia accumsan dictumst.
+                    <blockquote>Mollis tempor aliquam nisi facilisis orci class ut fermentum sodales. Risus nulla proin habitant porttitor vulputate platea auctor facilisis ut ut consectetur urna curabitur tortor.
                     </blockquote>
                     <div class="article__stars">
                       <div class="article__star"><span class="fa fa-star"></span></div>
@@ -388,7 +396,7 @@
                     </div>
                   </div>
                   <div class="article__testimony">
-                    <blockquote>Lobortis tristique ultricies dictumst convallis laoreet luctus sem venenatis fames. Pharetra taciti quis habitasse litora lobortis turpis eget nullam cras ut fringilla habitasse luctus suspendisse.
+                    <blockquote>Et lacus fermentum torquent conubia faucibus pharetra consequat nisi mi. Nulla faucibus sociosqu placerat massa litora eget molestie lacinia mi tellus lacinia praesent risus leo.
                     </blockquote>
                     <div class="article__stars">
                       <div class="article__star"><span class="fa fa-star"></span></div>
@@ -410,7 +418,7 @@
                     </div>
                   </div>
                   <div class="article__testimony">
-                    <blockquote>Habitant habitasse nostra elementum fermentum ligula phasellus integer a tempus. Vehicula lectus curabitur duis morbi felis ut nullam aenean velit ullamcorper aliquet duis at pharetra.
+                    <blockquote>Praesent elementum nisi feugiat rhoncus mi hendrerit ut himenaeos mi. Velit suspendisse faucibus integer neque interdum sollicitudin quis curabitur phasellus nec porta volutpat feugiat pulvinar.
                     </blockquote>
                     <div class="article__stars">
                       <div class="article__star"><span class="fa fa-star"></span></div>
@@ -432,7 +440,7 @@
                     </div>
                   </div>
                   <div class="article__testimony">
-                    <blockquote>Litora mattis duis dictumst curabitur senectus et congue semper sed. Aenean mattis elit tincidunt erat accumsan sollicitudin semper diam imperdiet imperdiet est aptent vel sollicitudin.
+                    <blockquote>Tristique fusce tellus vel nulla faucibus neque nulla lobortis fermentum. Ullamcorper taciti suspendisse commodo aptent per duis quis turpis tristique phasellus lobortis gravida odio leo.
                     </blockquote>
                     <div class="article__stars">
                       <div class="article__star"><span class="fa fa-star"></span></div>
@@ -457,9 +465,9 @@
               <div class="section__logo"> <img src="img/icons/logo-modu-white.png"></div>
               <div class="section__banner__content">
                 <h3 class="section__title">¿Tienes dudas? Contáctate con nosotros y te aclaramos todo</h3>
-                <p>Nunc vitae odio mattis, ullamcorper tellus id, posuere diam. In euismod mi vel faucibus tristique. Aenean molestie mattis blandit. Praesent scelerisque gravida tellus. Etiam ut lacus dictum, tristique diam a, interdum mi. Nulla et viverra neque. Suspendisse mollis.</p>
+                <!--p Nunc vitae odio mattis, ullamcorper tellus id, posuere diam. In euismod mi vel faucibus tristique. Aenean molestie mattis blandit. Praesent scelerisque gravida tellus. Etiam ut lacus dictum, tristique diam a, interdum mi. Nulla et viverra neque. Suspendisse mollis.-->
               </div>
-              <div class="section__buttons"><a href="#" class="btn btn--secondary">Contactar</a><a href="#" class="btn btn--white">Preguntas frecuentes</a></div>
+              <div class="section__buttons"><a href="contact.html" class="btn btn--secondary">Contactar</a><a href="faq.html" class="btn btn--white">Preguntas frecuentes</a></div>
             </div>
           </div>
         </div>
@@ -471,10 +479,10 @@
           <div class="cols">
             <div class="col-md-4">	
               <div class="footer__logo"> <img src="img/icons/logo-modu.png"></div>
-              <div class="footer__info">
-                <p>Sodales at posuere neque vehicula nibh elit mi proin tempus. Vivamus curabitur nisl porttitor ac aliquam mauris ullamcorper curabitur egestas dapibus habitasse habitasse lacinia nam.
-                </p>
-              </div>
+              <!--.footer__info
+              p: +lorem(25)
+              
+              -->
               <div class="footer__socials"> 
                 <div class="footer__social"> <a href="#"><span class="fa fa-linkedin"></span></a></div>
                 <div class="footer__social"> <a href="#"><span class="fa fa-instagram"></span></a></div>

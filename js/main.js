@@ -43,6 +43,32 @@ app.common = {
   }
 };
 
+app.faq = {
+  init: function() {
+    return $(".faq").each(function() {
+      var faq;
+      faq = $(this);
+      faq.find(".faq__item:not(.faq__open) .faq__answer").hide();
+      return faq.find(".faq__question").click(function() {
+        var index;
+        index = $(this).parent().index();
+        return app.faq.open(faq, index);
+      });
+    });
+  },
+  open: function(faq, index) {
+    return faq.find(".faq__item").each(function() {
+      if ($(this).index() === index) {
+        $(this).find(".faq__answer").slideToggle();
+        return $(this).toggleClass("faq__open");
+      } else {
+        $(this).find(".faq__answer").slideUp();
+        return $(this).removeClass("faq__open");
+      }
+    });
+  }
+};
+
 app.forms = {
   init: function() {
     $("form").each(function() {
@@ -577,7 +603,7 @@ app.swiper = {
       breakpoints: {
         0: {
           slidesPerView: 1,
-          spaceBetween: 0,
+          spaceBetween: 40,
           slidesPerGroup: 1
         },
         900: {
